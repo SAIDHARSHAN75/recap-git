@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred-id') // Jenkins credential ID
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred-id')
         DOCKER_IMAGE = "saidharshan706/your-app"
         DEPLOY_SERVER = "ubuntu@3.82.222.215"
     }
